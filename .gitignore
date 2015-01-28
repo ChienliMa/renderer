@@ -1,6 +1,2 @@
-*.jpg
-*.bmp
-*.ttf
-*.png
-test_pygame.py
-
+.DS_Store
+*.pyc
