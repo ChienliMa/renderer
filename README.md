@@ -1,6 +1,6 @@
 # Redenerer: 
     Personal implementation of Synthetic Data Generator.
-    -Dependence: pygamg;  Recommand System: OSX
+    -Dependence: pygame, opencv, scipy;  Recommand System: OSX
     
     
 Run the demo( example.py ) and you will find systhetic datas in the 'result' folder. Please note that the quality of results is highly depends of the qualites of fonts and background images.
