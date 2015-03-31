@@ -92,7 +92,7 @@ def render( text, font_file, color, bg, font_size ):
 
     # render foreground mask( Aplha channel )
     surface = font.render(text, True, white, black )    
-    f_mask =np.array( pygame.surfarray.array3d( surface ) ) 
+    f_mask =np.array( pygame.surfarray.array2d( surface ) ) 
     
     # whether text have border, shadow or nothing:
     # 0 for no middle later, 1 for shadow, 2 for border 
@@ -146,7 +146,7 @@ def crop_result( src, f_mask ):
     """
     """
     h, w, c = src.shape 
-    row, col, channel = np.where( f_mask != 0 )
+    row, col = np.where( f_mask != 0 )
 
     top = row[0]
     buttom = row[-1]
